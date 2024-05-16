@@ -6,7 +6,7 @@ cp .env.example .env
 composer install
 ```
 ```
-sudo chown o+r ./storage -R
+sudo chmod o+w ./storage -R
 ```
 ```
 sail up -d
