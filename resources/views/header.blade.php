@@ -29,7 +29,11 @@
                                     Войти
                                 </button>
                             </li>
-                            <li><a class="dropdown-item" href="#">Зарегестрироваться</a></li>
+                            <li>
+                                <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#signup">
+                                    Зарегестрироваться
+                                </button>
+                            </li>
                             <li><a class="dropdown-item" href="#">Избранное</a></li>
                         </ul>
                     </li>
@@ -48,6 +52,22 @@
             </div>
             <div class="modal-body">
                 @include('forms.signin')
+            </div>
+            <div class="modal-footer d-flex flex-column">
+                <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="signup" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Регистрация</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                @include('forms.signup')
             </div>
             <div class="modal-footer d-flex flex-column">
                 <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Закрыть</button>

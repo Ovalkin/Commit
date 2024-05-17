@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commit - Доска объявлений</title>
-    @vite(['resources/js/app.js', 'resources/css/app.scss'])
-</head>
-<body>
-
-@include('header')
-
-
-
 <main class="pt-5">
     <section class="hero bg-dark text-white py-5">
         <div class="container">
@@ -93,7 +79,3 @@
         </div>
     </section>
 </main>
-
-@include('footer')
-</body>
-</html>
